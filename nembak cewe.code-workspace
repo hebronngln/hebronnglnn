@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../Documents/vs"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nembak cewe",
+		"files.autoSave": "onWindowChange",
+		"editor.formatOnSave": true
+	}
+}
