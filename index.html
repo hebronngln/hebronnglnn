@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>For Dek Chelsea</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fef4f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 700px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .text {
+            color: #e91e63;
+            font-size: 24px;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: #e91e63;">Ini aku buatkan Spesial Untuk Adek</h1>
+
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="/200905.jpg" alt="Slide 1">
+            <div class="text">Aku udah lama suka sama adek...</div>
+        </div>
+        <div class="slide">
+            <img src="/20000.jpg" alt="Slide 2">
+            <div class="text">Tolong kasih aku kesempatan untuk buktikan cintaku</div>
+        </div>
+        <div class="slide">
+            <img src="/200601.jpg" alt="Slide 3">
+            <div class="text">Aku akan berusaha buat adek bahagia dan cinta samaku</div>
+        </div>
+        <div class="slide">
+            <img src="/20090520.jpg" alt="Slide 4">
+            <div class="text">Adek Mau ga jadi pacarku</div>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Ganti slide setiap 60 detik
+        }
+    </script>
+
+</body>
+
+</html>
